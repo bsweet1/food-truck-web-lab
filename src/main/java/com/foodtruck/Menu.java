@@ -8,20 +8,27 @@ public class Menu {
     public Menu() {
         items = new HashMap<>();
 
-        // Salads (3)
+        // Salads (5)
         items.put("salad_greek", new Salad("Greek Salad", 7.50));
         items.put("salad_caesar", new Salad("Caesar Salad", 7.25));
         items.put("salad_garden", new Salad("Garden Salad", 6.75));
+        items.put("salad_fruit", new Salad("Fruit Salad", 10.00));
+        items.put("salad_cobb", new Salad("Cobb Salad", 9.75));
 
-        // Sandwiches (3)
+        // Sandwiches (5)
         items.put("sandwich_turkey", new Sandwich("Turkey Sandwich", 9.50));
         items.put("sandwich_veggie", new Sandwich("Veggie Sandwich", 8.75));
         items.put("sandwich_tuna", new Sandwich("Tuna Sandwich", 9.25));
+        items.put("sandwich_chicken", new Sandwich("Chicken Sandwich", 9.75));
+        items.put("sandwich_ham", new Sandwich("Ham Sandwich", 8.95));
 
-        // Drinks (3)
+        // Drinks (5)
         items.put("drink_water", new Drink("Water", 1.50));
         items.put("drink_lemonade", new Drink("Lemonade", 2.75));
         items.put("drink_icedtea", new Drink("Iced Tea", 2.50));
+        items.put("drink_soda", new Drink("Soda", 2.00));
+        items.put("drink_coffee", new Drink("Coffee", 2.25));
+
     }
 
     public MenuItem getItem(String code) {
